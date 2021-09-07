@@ -100,7 +100,7 @@ function getDialog(dialogType, text){
 }
 
 function showYouWon(){
-  const text = "Awesome job, you got it! You took"  + guesses[index.length] "Count To guess Correct Number."
+  const text = "Awesome job, you got it! You took"
   let dialog = getDialog('won', text)
   document.getElementById("result").innerHTML = dialog;
 }
