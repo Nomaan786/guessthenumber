@@ -14,11 +14,20 @@ window.onload = function() {
 }
 
 function playGame(){
+    document.getElementById("number-guess").focus();
+    if(document.getElementById("number-guess").value!=""){
   let numberGuess = document.getElementById("number-guess").value;
+        document.getElementById("number-guess").value="";
   saveGuessHistory(numberGuess)
   displayHistory()
   displayResult(numberGuess)
 }
+     else{
+    alert("Pleas input any number");
+            document.getElementById("number-guess").focus();
+
+    }
+  }
 
 // Initialize a new game by resetting all values and content on the page
 function initGame(){
